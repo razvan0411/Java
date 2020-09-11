@@ -19,4 +19,12 @@ public class RandomList {
         Random random = new SecureRandom();
         return random.ints(listSize, min,max+1).boxed().collect(Collectors.toList());
     }
+
+    public Integer getSumList(List<Integer> l){
+        return l.stream().reduce(Integer::sum).orElseGet(() -> 0);
+    }
+
+    public Integer getAvrageList(List<Integer> l){
+        return 0;
+    }
 }
