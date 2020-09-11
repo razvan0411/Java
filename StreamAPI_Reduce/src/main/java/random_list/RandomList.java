@@ -30,9 +30,11 @@ public class RandomList {
 
     public Float getAverageList(List<Integer> l){
         AtomicReference<Integer> count = new AtomicReference<>(0);
-        Integer sumList = l.stream().reduce(0, (subtotal, element) -> {
-            count.set(count.get() + 1);
-            return subtotal+element;
+        Integer sumList = l.stream()
+                .reduce(0,
+                        (subtotal, element) -> {
+                                count.set(count.get() + 1);
+                                return subtotal+element;
         });
         return Float.valueOf(sumList)/count.get();
     }
