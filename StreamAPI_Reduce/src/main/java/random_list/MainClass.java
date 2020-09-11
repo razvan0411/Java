@@ -1,3 +1,5 @@
+package random_list;
+
 import java.util.List;
 
 public class MainClass {

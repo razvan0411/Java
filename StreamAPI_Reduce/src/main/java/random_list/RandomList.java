@@ -1,3 +1,5 @@
+package random_list;
+
 import java.security.SecureRandom;
 import java.util.List;
 import java.util.Random;
