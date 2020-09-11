@@ -9,8 +9,8 @@ public class MainClass {
 
         System.out.println("Sum elements of list is " + rl.getSumList(integerList));
 
-        Integer count = 0;
-        integerList.stream().reduce((x, y) -> { return x+y; });
-        System.out.println(count);
+        System.out.println("Average elements of list is " + rl.getAverageList(integerList));
+
+        System.out.println("Mean deviation of list is " + rl.getMeanDeviationList(integerList));
     }
 }
